@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon + Contact + Subscribe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Hello World,<br>Our vision is about to live.</h1>
+    <p>Let me introduce you to the latest version of this template. Built with Bootstrap 4, letting you take the lead, now.</p>
+    <button class="btn" id="openContactPanel">Get more information</button>
+    <button class="btn btn-pink" data-toggle="modal" data-target="#subscribeModal">I want to be updated</button>
+  </section>
+
+  <!-- CONTACT SIDE PANEL -->
+  <div class="contact-panel" id="contactPanel">
+    <button class="close-panel" id="closeContactPanel">&times;</button>
+    <h2>Contact Information</h2>
+    <p><strong>Phone:</strong> (+33) 66-1254-611</p>
+    <p><strong>Fax:</strong> (+38) 66-1254-989</p>
+    <p><strong>Address:</strong> 66 Grand Central, NY 66564, USA</p>
+    <p><strong>Email:</strong> phly@example.com</p>
+    <footer>&copy; PHLY – Made for awesome people</footer>
+  </div>
+
+  <!-- SUBSCRIBE MODAL -->
+  <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content text-white">
+        <div class="modal-body">
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 2rem;">&times;</span>
+          </button>
+          <h3>Subscribe and stay tuned!</h3>
+          <p>Get exclusive updates and news about our launch!</p>
+          <form>
+            <input type="email" class="form-control text-center" placeholder="Your Email" required />
+            <button type="submit" class="btn btn-pink btn-block font-weight-bold mt-3">GET NOTIFIED</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

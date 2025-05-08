@@ -1,0 +1,105 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px;
+  background: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-pink {
+  background: #ff007a;
+  border: none;
+}
+
+.btn-pink:hover {
+  background: #e6006d;
+}
+
+.contact-panel {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  background: #fff;
+  color: #000;
+  z-index: 1000;
+  transition: right 0.4s ease-in-out;
+  padding: 2rem;
+  box-shadow: -6px 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-panel.show {
+  right: 0;
+}
+
+.contact-panel h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-panel p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+}
+
+.close-panel {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 2rem;
+  border: none;
+  background: none;
+  color: #999;
+  cursor: pointer;
+}
+
+.close-panel:hover {
+  color: #000;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #888;
+}
